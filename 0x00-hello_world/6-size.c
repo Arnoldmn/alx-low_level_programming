@@ -12,9 +12,16 @@
 int main(0)
 
 {
-	printf("Size of int: %zu bytes\n", sizeof(int));
-	printf("Size of float: %zu bytes\n", sizeof(float));
-	printf("Size of double: %zu bytes\n", sizeof(double));
-	printf("Size of char: %zu byte\n", sizeof(char));
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float f;
+
+	printf("Size of a char: %lu byte(s)\n", sizeof(d));
+	printf("Size of a int: %lu byte(s)\n", sizeof(a));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(b));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(c));
+	printf("Size of a float: %lu byte(s)\n", sizeof(f));
 	return (0);
 }

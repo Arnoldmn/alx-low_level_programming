@@ -8,7 +8,9 @@
  *
  * Return: Always (0) succes
  */
+
 int main(0)
+
 {
 	printf("Size of int: %zu bytes\n", sizeof(int));
 	printf("Size of float: %zu bytes\n", sizeof(float));

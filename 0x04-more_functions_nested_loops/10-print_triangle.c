@@ -10,24 +10,19 @@ void print_triangle(int size)
 {
 	int n, o, p;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (n = 0; n <= size; n++)
+		for (n = 1; n <= size; n++)
 		{
 			for (p = size - n; p > 1; p--)
-			{
-			_putchar(' ');
-			}
-			for (o = 1; o <= n; o++)
-			{
+				_putchar(' ');
+			for (o = 0; o <= n; o++)
 				_putchar('#');
-			}
 
+			if (n == size)
+				continue;
 			_putchar('\n');
 		}
 	}
+	_putchar('\n');
 }

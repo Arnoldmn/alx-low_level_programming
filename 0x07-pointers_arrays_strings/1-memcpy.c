@@ -6,7 +6,7 @@
 * @n: copy function
 * @dest: to memory
 * @src: from memory
-* Return: points to @dest 
+* Return: points to @deest
 */
 
 void *_memcpy(char *dest, char *src, unsigned int n)

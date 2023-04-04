@@ -5,7 +5,7 @@
  * @s: pointer in string
  * Return: Always 0
  */
-void  *_strchr(char *s, char c)
+char  *_strchr(char *s, char c)
 {
 	int i = 0;
 

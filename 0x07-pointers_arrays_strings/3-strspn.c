@@ -6,7 +6,7 @@
  * @accept: substring of characters accpted
  * Return: of occurence lenght
  */
-unsigned int _strpn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int a = 0;
 	int b;

@@ -4,9 +4,7 @@
  *
  * @haystack: character pointer
  * @needle: character pointer
- *
  * Return: Always 0 (success)
- *
  */
 char *_strstr(char *haystack, char *needle)
 {

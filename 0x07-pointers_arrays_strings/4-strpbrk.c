@@ -8,7 +8,7 @@
  *
  * Return: Always 0 (success)
  */
-void *_strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int j;
 

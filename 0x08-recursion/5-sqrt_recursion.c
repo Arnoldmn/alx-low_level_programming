@@ -22,9 +22,9 @@ int _sqrt_recursion(int n)
 
 int check_sqrt(int i, int j)
 {
-	if (i * i > j)
+	if (j * j > i)
 		return (-1);
-	if (i * i == j)
-		return (i);
+	if (j * j == i)
+		return (j);
 	return (check_sqrt(i, j + 1));
 }

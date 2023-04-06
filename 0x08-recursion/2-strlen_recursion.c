@@ -4,7 +4,7 @@
  * @s: string character
  * Return: string length
  */
-void _strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	int j = 0;
 

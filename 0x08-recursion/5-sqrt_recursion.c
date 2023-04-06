@@ -26,5 +26,5 @@ int check_sqrt(int i, int j)
 		return (-1);
 	if (i * i == j)
 		return (i);
-	return (check_sqrt(j, i + 1));
+	return (check_sqrt(i, j + 1));
 }

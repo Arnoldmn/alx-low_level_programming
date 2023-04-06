@@ -1,4 +1,4 @@
-#include "mai.h"
+#include "main.h"
 /**
  *  factorial - returns the fact of a given number
  *  @n: int to find factorial

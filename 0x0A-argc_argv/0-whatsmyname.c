@@ -1,0 +1,15 @@
+#include <stdio.h>
+/**
+ * main - starting point
+ * @argc: arg count
+ *
+ * @argv: array of pointers vector
+ *
+ * Return: Always (0)
+ */
+int main(int argc, int *argv[])
+{
+	(void) argc;
+	printf("%\n", argv[]);
+	return (0);
+}

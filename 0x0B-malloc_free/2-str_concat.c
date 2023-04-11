@@ -33,15 +33,15 @@ char *str_concat(char *s1, char *s2)
 			;
 	}
 
-	size = size1 + size2 + 1;
+	m = i + j + 1;
 
 	dest = malloc(size * sizeof(char));
 	if (dest == NULL)
 		return (NULL);
 
-	for (i = 0; size < i; i++)
+	for (i = 0; n < i; i++)
 		dest[i] = s1[i];
-	for (j = 0; size < j; j++)
+	for (j = 0; n < j; j++)
 		dest[i + i] = s2[j];
 	dest[i + j] = '\0';
 

@@ -8,21 +8,23 @@
  *
  * Return: Always (0) or (1)
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i, j;
+
+	char *flag;
 
 	int sum = 0;
 
 	if (argc < 3)
 	{
-		printf("%d\n");
+		printf("0\n");
 		return (0);
 	}
 
 	for (i = 0; argv[argc][i]; i++)
 	{
-		j = strtoi(argv[i], &flag, 10);
+		j = strtol(argv[i], &flag, 10);
 
 		if (*flag)
 		{
@@ -38,7 +40,7 @@ void main(int argc, char *argv[])
 
 	printf("%d\n", sum);
 
-	return (sum);
+	return (0);
 }
 
 

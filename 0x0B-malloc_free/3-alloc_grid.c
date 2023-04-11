@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * alloc_grid - creates a 2D array of integers 
- *
+ * alloc_grid - creates a 2D array of integers
  * @width: width of array
  * @height: height of array
  *

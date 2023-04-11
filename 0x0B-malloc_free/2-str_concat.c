@@ -12,8 +12,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *dest;
 	unsigned int i, j, size1, size2, size;
+	char *dest;
 
 	size1 = size2 = 0;
 
@@ -29,6 +29,7 @@ char *str_concat(char *s1, char *s2)
 		while (s2[i++] != '\0')
 			size2++;
 	}
+
 	size = size1 + size2;
 
 	dest = (char *)malloc(sizeof(char) * (size + 1));

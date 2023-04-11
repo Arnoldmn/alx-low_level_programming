@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 0; argv[argc][i]; i++)
+	for (i = 1; argv[i]; i++)
 	{
 		j = strtol(argv[i], &flag, 10);
 

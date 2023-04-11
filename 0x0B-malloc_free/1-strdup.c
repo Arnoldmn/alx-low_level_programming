@@ -7,25 +7,25 @@
  *
  * Return: duplicated string or null if NULL
  */
+
 char *_strdup(char *str)
 {
 	unsigned int i, j;
-	char *c;
+	char *s;
 
 	if (str == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
 		;
 	i++;
-	c = malloc(i * sizeof(char));
-	if (c == NULL)
+	s = malloc(i * sizeof(char));
+	if (s == NULL)
 	{
 		return (NULL);
 	}
-	for (j = 0; j < 1; j++)
+	for (j = 0; j < i; j++)
 	{
-		c[j] = str[j];
+		s[j] = str[j];
 	}
-
-	return (c);
+	return (s);
 }

@@ -14,13 +14,13 @@ void main(int argc, char *argv[])
 
 	int sum = 0;
 
-	if (argc < 2)
+	if (argc < 3)
 	{
-		printf("0\n");
+		printf("%d\n");
 		return (0);
 	}
 
-	for (i = 0; argc[i]; i++)
+	for (i = 0; argv[argc][i]; i++)
 	{
 		j = strtoi(argv[i], &flag, 10);
 
@@ -36,9 +36,9 @@ void main(int argc, char *argv[])
 		}
 	}
 
-	printf("*d\n", sum);
+	printf("%d\n", sum);
 
-	return (0);
+	return (sum);
 }
 
 

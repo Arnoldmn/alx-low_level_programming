@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * _strdup - copy a string to a new memory allocation
  *

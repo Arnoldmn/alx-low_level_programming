@@ -7,7 +7,7 @@
 - [0x04-more_functions_nested_loops](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops): We continued working with loops and functions in C but more advanced topics.
 - [0x05-pointers_arrays_strings](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings): As for this project we left our comfort zone and went deep in the into C by trying to understand what are Arrays and pointers.
 - [0x06-pointers_arrays_strings](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x06-pointers_arrays_strings): We went deep into the topics by trying to solve more hard questions and tasks.
-- [0x07-pointers_arrays_strings](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x07-pointers_arrays_strings): we went deep into the Valleys the Himalayas with pointers and arrays.
+- [0x07-pointers_arrays_strings](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x07-pointers_arrays_strings): we went deep into the Valleys the of Himalayas with pointers and arrays.
 - [0x08-recursion](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x08-recursion)
 - [0x09-static_libraries](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x09-static_libraries)
 - [0x0A-argc_argv](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x0A-argc_argv)

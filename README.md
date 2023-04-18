@@ -1,8 +1,8 @@
 ### Overview 
-> This repository is part of the ALX low level programming where I try to solve each task with the help of google searches and provided resources to achieve a goal reaquired.
+> This repository is part of the ALX low level programming where I try to solve each task with the help of google searches and provided resources to achieve required solutions.
 
-- [0x00-hello_world](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x00-hello_world)
-- [0x01-variables_if_else_while](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
+- [0x00-hello_world](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x00-hello_world): Here we looked at the hello world project as we tried to get familiar with the basics of C.
+- [0x01-variables_if_else_while](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x01-variables_if_else_while): In this particualr project we took time to look at control statements in C
 - [0x02-functions_nested_loops](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
 - [0x04-more_functions_nested_loops](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops)
 - [0x05-pointers_arrays_strings](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings)
@@ -16,4 +16,4 @@
 - [0x0D-preprocessor](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x0D-preprocessor)
 - [0x0E-structures_typedef](https://github.com/Arnoldmn/alx-low_level_programming/tree/master/0x0E-structures_typedef)
 
-> You can always reach to me for collaboration on [Twitter](https://twitter.com/ArnoldMumbere)
+> You can always reach out for collaboration on [Twitter](https://twitter.com/ArnoldMumbere)

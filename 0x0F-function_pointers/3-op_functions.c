@@ -44,7 +44,7 @@ int op_mul(int a, int b)
 /**
  * op_div - divides two numbers
  *
- * @a: first digit 
+ * @a: first digit
  * @b: second digit
  * Return: 0
  */

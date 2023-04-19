@@ -1,9 +1,8 @@
 #include "function_pointers.h"
 /**
- * @array_iterator - a function as a param on each
- * element of array
+ * array_iterator - a function as a param on each element of array
  *
- * @array; array to test function on
+ * @array: array to test function on
  * @size: array size
  * @action: is a pointer to the function
  *

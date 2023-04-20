@@ -3,7 +3,6 @@
 /**
  * print_numbers - function that numbers
  * @n: number of param
- * 
  * @separator: separator between two numbers
  * Return: Always 0
  */

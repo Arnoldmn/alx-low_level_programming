@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-
 /**
  * sum_them_all - adds all the natural numbers
  * @n: number to be passed

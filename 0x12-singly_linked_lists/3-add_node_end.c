@@ -9,42 +9,26 @@
  *
  * Return:  NULL if it failed.
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
-	if (head == NULL || str == NULL)
+	list_t *newNode;
+	list_t *last = *head;
+
+	newNode = malloc(sizeof(list_t));
+	if (newNode == NULL)
 		return (NULL);
 
-	list_t *new_node;
+	newNode->str = strdup(str);
 
-	char *new_str;
-
-	new_node = malloc(sizeof(list_t));
-
-	if (new_node == NULL)
-		return (NULL);
-
-	new_str = strdup(str);
-	if (new_str == NULL)
-	{
-		free(new_node);
-		return (NULL);
-	}
-
-	new_node->str = new_str;
-
-	new_node->next = NULL;
+	newNode->next = NULL;
 
 	if (*head == NULL)
-		*head = new_node;
-	else
 	{
-		list_t *current = *head;
-
-		while (current->next != NULL)
-			current = current->next;
-		current->next = new_node;
+		*head = newNode;
+		return (newNode);
 	}
-
-	return (new_node);
+	while (last->next != NULL)
+		last = last->next;
+	last->next = newNode;
+	return (newNode);
 }

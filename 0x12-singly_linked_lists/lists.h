@@ -2,7 +2,7 @@
 #define LISTS_H
 
 #include <stddef.h>
-
+#include <string.h>
 /**
  * struct list_s - linked lis
  * @str: string for storage of data

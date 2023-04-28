@@ -1,22 +1,17 @@
-section .data
-	hello_msg db "Hello, Holborton", 0
-	format db "%s", 0
-
+global main
 
 section .text
-	extern printf
+main:
+	mov rax, 1; write(
+	mov rdi, 1; STDOUT_FILENO,
+	mov rsi, msg; "Hello, Holberton\n",
+	mov rdx, msglen ; sizeof("Hello, Holberton\n")
+	syscall ; );
 
-global _start
+	mov rax, 60 ; exit(
+	mov rdi, 0; EXIT_SUCCESS
+	syscall ; );
 
-
--start:
-	; Prepare arguments for printf
-	mov rdi, format
-	mov rsi, hello_msg
-	xor eax, eax  ; Clear EAX register to indicate no floating-point arguments
-	call printf
-
-	; Exit the program
-	mov eax, 60	; System call number for rxit
-	xor edi, edi	; Exit status code 0
-	sysCall
+section .data
+	msg: db "Hello, Holberton", 10
+	msglen: equ $ - msg

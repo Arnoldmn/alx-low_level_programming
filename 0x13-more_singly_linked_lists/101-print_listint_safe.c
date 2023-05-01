@@ -1,28 +1,38 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * print_list_rec - print the elements of listint_t list in recursion
- * @head: pointer to list
- * @n: number of nodes received
- * Return: number of nodes
- */
-size_t print_list_rec(const listint_t *head, unsigned int n)
-{
-	if (head)
-	{
-		n = print_list_rec(head->next, n + 1);
-		printf("[%p] %i\n", (void *)head, head->n);
-	}
-	return (n);
-}
-/**
- * print_listint_safe - print the elements of list
- * @head: pointer to list
- * Return: number of nodes
+ * print_listint_safe - prints a list.
+ * @head: head of the list.
+ *
+ * Return: nodes in the list.
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	if (head)
-		return (print_list_rec(head, 0));
-	exit(98);
+	const listint_t *slow, *fast;
+
+	size_t count = 0;
+
+	slow = head;
+	fast = head;
+
+	while (slow != NULL && fast != NULL && fast->next != NULL)
+	{
+		printf("[%p] %d\n", (void *)slow, slow->n);
+
+		slow = slow->next;
+		fast = fast->next->next;
+
+		if (slow == fast)
+		{
+			printf("[%p] %d\n", (void *)slow, slow->n);
+			printf("-> [%p] %d\n", (void *)fast->next, fast->next->n);
+			exit(98);
+		}
+
+		count++;
+	}
+
+	return (count);
 }

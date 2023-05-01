@@ -1,25 +1,22 @@
 #include "lists.h"
+#include <stdio.h>
+
 /**
- * print_list_rec - prints all the elements of a listint_t list recursively.
- * @head: pointer to list.
- * @n: number of nodes acumlated as param.
+ * print_listint - prints the elements of a listint_t list.
+ * @h: head of the list.
+ *
  * Return: number of nodes.
- */
-size_t print_list_recusion(const listint_t *head, unsigned int n)
-{
-	if (head)
-	{
-		printf("%i\n", head->n);
-		n = print_list_recusion(head->next, n + 1);
-	}
-	return (n);
-}
-/**
- * print_listint - print the elements of a listint_t list
- * @h: pointer to list
- * Return: node number
  */
 size_t print_listint(const listint_t *h)
 {
-	return (print_list_recusion(h, 0));
+	size_t count = 0;
+
+	while (h != NULL)
+	{
+		printf("%d\n", h->n);
+		h = h->next;
+		count++;
+	}
+
+	return (count);
 }

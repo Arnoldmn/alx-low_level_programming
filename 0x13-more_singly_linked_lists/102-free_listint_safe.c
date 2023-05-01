@@ -1,32 +1,38 @@
 #include "lists.h"
+#include <stdlib.h>
+
 /**
- * rec_free_listint - frees list
- * @head: pointer to list
- * @size: list' size
- * Return: number of nodes
- */
-int recusion_free_listint(listint_t *head, int size)
-{
-	if (head)
-	{
-		size = recusion_free_listint(head->next, size + 1);
-		free(head);
-	}
-	return (size);
-}
-/**
- * free_listint_safe - frees list with double pointer
- * @h: pointer to pointer to list
- * Return: number of nodes
+ * free_listint_safe - frees a  list, even if it contains a loop.
+ * @h: head of the list.
+ *
+ * Return: size of the list that was freed.
  */
 size_t free_listint_safe(listint_t **h)
 {
-	int size = 0;
+	listint_t *current, *tmp;
 
-	if (h && *h)
+	size_t count = 0;
+
+	if (h == NULL || *h == NULL)
+		return (0);
+
+	current = *h;
+
+	while (current != NULL)
 	{
-		size = recusion_free_listint(*h, size);
-		*h = NULL;
+		count++;
+		if (current->next >= current)
+		{
+			free(current);
+			break;
+		}
+		tmp = current;
+		current = current->next;
+		tmp->next = NULL;
+		free(tmp);
 	}
-	return (size);
+
+	*h = NULL;
+	return (count);
 }
+

@@ -11,7 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int temp;
 	unsigned long int diff = n ^ m;
 
-	for (sum = 63; sum >= 0; sum--)
+	for (i = 63; i >= 0; i--)
 	{
 		temp = diff >> i;
 		if (temp & 1)

@@ -65,7 +65,7 @@ void get_close(int get, int FD)
 {
 	if (get < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", FD);
 		exit(100);
 	}
 }
@@ -86,7 +86,7 @@ int main(int argc, char *argv[])
 	FD_fm = open(argv[1], O_RDONLY);
 	get_read((ssize_t)FD_fm, argv[1], -1, -1);
 	file_prm = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
-	FD_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, file_perm);
+	FD_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, file_prm);
 	get_write((ssize_t)FD_to, argv[2], FD_fm, -1);
 	strn_r = 1024;
 	while (strn_r == 1024)
@@ -101,6 +101,6 @@ int main(int argc, char *argv[])
 	close_to = close(FD_to);
 	close_fm = close(FD_fm);
 	get_close(close_to, FD_to);
-	get_close(close_from, FD_fm);
+	get_close(close_fm, FD_fm);
 	return (0);
 }

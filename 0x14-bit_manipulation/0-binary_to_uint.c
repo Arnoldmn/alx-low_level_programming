@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * binary_to_uint - converts binary to int
- * @: point string of 0 and 1 to character
+ * @b: point string of 0 and 1 to character
  * Return: number on success 0 if false
  */
 
@@ -11,12 +11,11 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int num;
 
 	num = 0;
-
-	if(!b)
+	if (!b)
 		return (0);
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] != '\0'; i++)
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
 	}
 	for (i = 0; b[i] != '\0'; i++)

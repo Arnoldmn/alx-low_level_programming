@@ -1,5 +1,22 @@
 #include "main.h"
 /**
+ * _power - gets the (base ^ power)
+ * @base: exponent base
+ * @pow: exponet base
+ * Return: (base ^ power)
+ */
+unsigned long int _power(unsigned int base, unsigned int pow)
+{
+        unsigned long int digt;
+        unsigned int i;
+
+        digt = 1;
+        for (i = 1; i <= pow; i++)
+                digt *= base;
+        return (digt);
+}
+
+/**
  * print_binary - function that prints a binary
  * @n: digit to be printed
  * Return: void
@@ -25,20 +42,4 @@ void print_binary(unsigned long int n)
 		}
 		div >>= 1;
 	}
-}
-/**
- * _power - gets the (base ^ power)
- * @base: exponent base
- * @pow: exponet base
- * Return: (base ^ power)
- */
-unsigned long int _power(unsigned int base, unsigned int pow)
-{
-	unsigned long int digt;
-	unsigned int i;
-
-	digt = 1;
-	for (i = 1; i <= pow; i++)
-		digt *= base;
-	return (digt);
 }

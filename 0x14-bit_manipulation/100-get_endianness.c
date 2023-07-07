@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * get_endianness - chacks the endianness
- * Return: 0 on big endian, 1 on small endian
+ * get_endianness - function that checks th
+ * Return: 0 on big endian, else 1  
  */
 int get_endianness(void)
 {
 	int i;
-	char *c;
+	char *b;
 
 	i = 1;
 	b = (char *)&i;

@@ -7,13 +7,13 @@
  */
 unsigned long int _power(unsigned int base, unsigned int pow)
 {
-        unsigned long int digt;
-        unsigned int i;
+	unsigned long int digt;
+	unsigned int i;
 
-        digt = 1;
-        for (i = 1; i <= pow; i++)
-                digt *= base;
-        return (digt);
+	digt = 1;
+	for (i = 1; i <= pow; i++)
+		digt *= base;
+	return (digt);
 }
 
 /**
